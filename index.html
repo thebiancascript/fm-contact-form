@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <title>Contact form</title>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Contact Us</h1>
+      <form>
+        <div>
+          <div class="div-label">
+            <label for="first-name" class="label">First Name</label>
+            <input
+              class="input"
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="Enter your first name"
+            />
+          </div>
+          <div class="div-label">
+            <label for="last-name" class="label">Last Name</label>
+            <input
+              class="input"
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Enter your last name"
+            />
+          </div>
+        </div>
+        <label for="email" class="label">E-mail</label>
+        <input
+          class="input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@email.com"
+        />
+        <label class="label" for="message">Message</label>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Type your message here!"
+        >
+        </textarea>
+        <div id="term-container">
+          <input type="checkbox" id="term" name="term" />
+          <label for="term" class="label" id="label-term"
+            >I consent to being contacted by the team.</label
+          >
+        </div>
+        <button type="submit" id="btn">Submit</button>
+      </form>
+    </main>
+    <!--   This field is required Last Name This field is
+    required Email Address Please enter a valid email address This field is
+    required Query Type General Enquiry Support Request Please select a query
+    type Message This field is required I consent to being contacted by the team
+    To submit this form, please consent to being contacted Submit Message Sent!
+    Thanks for completing the form. We'll be in touch soon! -->
+  </body>
+</html>
